@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="75dp"
+        android:theme="?attr/actionBarTheme"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="45dp"
+            android:id="@+id/app_logo"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/fav"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/nav_menu_icon"
+            android:layout_toRightOf="@id/app_logo"
+            android:layout_height="40dp"
+            android:textColorHint="#757575"
+            android:textColor="#757575"
+            android:id="@+id/search_box"
+            android:hint="Search Product"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_corner"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_search_icon"
+            android:inputType="text"></EditText>
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/nav_menu_icon"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="65dp"
+        app:cardCornerRadius="65dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home"
+            android:layout_gravity="center"
+            android:id="@+id/category_slider_img"
+            android:scaleType="centerInside"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Photos and murties"
+        android:textSize="13sp"
+        android:textColor="#000"
+        android:id="@+id/category_slider_text"/>
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.CartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/menu_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:drawableLeft="@drawable/ic_back_btn"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cart_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/fav"/>
+        <TextView
+            android:id="@+id/cart_name"
+            android:layout_toRightOf="@id/cart_img"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="Unni Asan"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/cart_pno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="hdygxhhsjjhd"
+            android:textSize="12dp"
+            android:layout_below="@id/cart_name"
+            android:layout_toRightOf="@id/cart_img"
+            android:textColor="@color/gray_dark"/>
+
+        <TextView
+            android:id="@+id/cart_mrp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/cart_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 275"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:foreground="@drawable/stricking_text"
+            android:layout_below="@id/cart_pno"
+            android:textColor="@color/red"/>
+        <TextView
+            android:id="@+id/cart_discount_mrp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cart_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 230"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@id/cart_pno"
+            android:textColor="@color/red"/>
+        <TextView
+            android:id="@+id/decrement_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:text="-"
+            android:gravity="center"
+            android:background="@drawable/update_cart_button"
+            android:padding="6dp"
+            android:layout_below="@id/cart_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/cart_count"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:background="@drawable/update_cart_button"
+            android:id="@+id/cart_count"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:layout_below="@id/cart_name"
+            android:layout_toLeftOf="@id/increment_btn"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/increment_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:text="+"
+            android:gravity="center"
+            android:background="@drawable/update_cart_button"
+            android:padding="6dp"
+            android:layout_below="@id/cart_name"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_light"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart Total"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 271.00"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Charges"
+                android:textSize="15dp"
+                android:textColor="@color/gray_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="₹ 20.00"
+                android:textColor="@color/gray_dark"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charges"
+                android:textSize="15dp"
+                android:textColor="@color/gray_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 100.00"
+                android:layout_alignParentRight="true"
+                android:textSize="15dp"
+                android:textColor="@color/gray_dark"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_light"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grand Total"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/grand_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 391.00"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROCEED TO CHECKOUT"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="15dp"/>
+
+</LinearLayout>

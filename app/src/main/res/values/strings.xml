@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dattaprabodhinee Estore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fast_shipping">Fast Shipping</string>
+    <string name="to_your_address_from_seller_shipping_n_method_online">To your address from seller. Shipping <br /> method online.</string>
+    <string name="secure_payment_method">Secure Payment Method</string>
+    <string name="description">Description</string>
+</resources>
